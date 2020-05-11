@@ -1,9 +1,429 @@
 
-html, body
+html
+  font-family sans-serif
+body
+  font-family Helvetica, Pingfang SC, Microsoft YaHei, STHeiti, Verdana, Arial, Tahoma, sans-serif
+// banner
+.index-banner
+  height pxs(620)
+  padding pxs(128) 0 pxs(38)
+  box-sizing border-box
+  background no-repeat top center / cover
+// 公用
+.index-common-title
+  padding pxs(70) 0 pxs(56)
+  .index-border
+    // width: calc((100% - 120px) / 2)
+    flex-shrink 1
+    img
+      max-width 100%
+.index-form-new
   margin 0
-.ljb
-  height 500px
-  background-color red
-.demo2
-  height 100px
-  background-color yellow
+  dd
+    margin 0
+  .index-input-button
+    width pxs(200)
+    height pxs(70)
+    .index-button-content
+      width 100%
+      user-select none
+      height 100%
+      line-height pxs(71)
+      border-radius pxs(5)
+      cursor pointer
+      background-image linear-gradient(140deg, #5174f5, #40a5f6)
+      transition: box-shadow 0.2s ease
+  .index-form-content
+    background-color #ffffff
+    border-radius pxs(5)
+    position absolute
+    top 0
+    left pxs(-10)
+    width pxs(435)
+    height pxs(70)
+    padding pxs(16) 0 pxs(16) pxs(35)
+    box-sizing border-box
+    .index-input-rod
+      margin 0 pxs(12)
+      width 1px
+      height 100%
+    .index-input-list
+      .index-input-content
+        border none
+        width 100%
+        user-select none
+        outline none
+        color #5d89eb
+      &.index-input-name
+        width pxs(80)
+      &.index-input-phone
+        width pxs(155)
+.index-form
+  .index-input-list
+    width pxs(250)
+    height pxs(55)
+    box-sizing border-box
+    padding-left pxs(26)
+    border-radius pxs(5)
+    border 1px solid #5174f5
+    box-shadow 0 0 pxs(12) 0 rgba(81, 116, 245, 0.6)
+    &.index-input-phone
+      margin-left pxs(52)
+    .index-input-content
+      min-width 0
+      border none
+      outline none
+  .index-input-button
+    // width pxs(200)
+    // height pxs(71)
+    .index-button-content
+      width pxs(170)
+      user-select none
+      height pxs(60)
+      line-height pxs(60)
+      border-radius pxs(5)
+      cursor pointer
+      background-image linear-gradient(140deg, #5174f5, #40a5f6)
+      transition: box-shadow 0.2s ease
+      box-shadow 0px 4px 7.6px 0.4px rgba(80, 117, 245, 0.45)
+// banner
+.index-banner
+  position relative
+  .index-receive
+    padding-bottom pxs(65)
+  .index-button-know
+    width pxs(200)
+    user-select none
+    height pxs(71)
+    line-height pxs(71)
+    border-radius pxs(5)
+    cursor pointer
+    border pxs(3) solid #ffffff
+// 简介
+.index-brief-intro
+  height pxs(118)
+  box-sizing border-box
+  .index-list
+    width 33.3333334%
+// 洞见云介绍
+.index-introduce
+  padding-bottom pxs(80)
+  .index-info
+    padding 60px 10px 0
+  .index-title
+    margin 0 0 pxs(55) 0
+    height pxs(90)
+    img
+      max-height 100%
+  .index-article
+    line-height pxs(40)
+  // .index-right-content
+  // width pxs(900)
+  .index-column
+    margin-top pxs(56)
+  .index-list
+    width pxs(255)
+    height pxs(365)
+    box-sizing border-box
+    .index-list-container
+      border 3px solid #78a5fb
+      padding-top pxs(32)
+      border-radius pxs(10)
+      transition all 0.3s ease-in-out
+      .index-introduce-icon
+        width pxs(130)
+        height pxs(130)
+        // transition all 0.3s ease-in-out
+      .index-shop
+        background url('./img/index-shop.png') no-repeat
+      .index-light
+        background url('./img/index-light.png') no-repeat
+      .index-brand
+        background url('./img/index-brand.png') no-repeat
+      .index-money
+        background url('./img/index-money.png') no-repeat
+// 嗨皮创业服务
+.index-entrepreneurship
+  padding-bottom pxs(60)
+  .index-entrepreneurship-banner
+    width 100%
+    height pxs(460)
+    background no-repeat center / cover
+  .index-entrepreneurship-ul
+    margin-top pxs(30)
+    margin-left pxs(-15)
+    .index-entrepreneurship-list
+      padding 0 pxs(13)
+      margin-bottom pxs(24)
+      .index-entrepreneurship-list-content
+        padding pxs(80) 0 pxs(60)
+        background-color #ffffff
+        border-radius pxs(15)
+        box-sizing border-box
+        box-shadow 0 0 12px 0px rgba(0, 0, 0, 0.15)
+      .index-entrepreneurship-icon
+        height pxs(170)
+        background-repeat no-repeat
+        background-position center bottom
+        &.index-choice-address
+          background-image url('./img/index-choice-address.png')
+        &.index-train
+          background-image url('./img/index-train.png')
+        &.index-equipment-service
+          background-image url('./img/index-equipment-service.png')
+        &.index-software-service
+          background-image url('./img/index-software-service.png')
+        &.index-gift
+          background-image url('./img/index-gift.png')
+        &.index-more-service
+          background-image url('./img/index-more-service.png')
+// 其它疑问
+.index-other-questions
+  background no-repeat center / cover
+  height pxs(553)
+  // background-color #f0d2d7
+  .index-title
+    padding-top pxs(98)
+  .index-describe
+    padding-top pxs(50)
+  .index-tip
+    margin pxs(70) 0 0 0
+// 洞见云+嗨皮商家
+.index-big-morepage
+  padding pxs(68) 0 pxs(100)
+  background-color #ffffff
+  .index-big-morepage-ul
+    width pxs(1024)
+    margin pxs(60) auto 0
+    .index-big-morepage-list
+      margin-bottom pxs(10)
+      .index-big-morepage-content
+        box-shadow 0 0 3px 0px rgba(0, 0, 0, 0.15)
+        padding 0 pxs(45)
+        width 49.9%
+        height pxs(247)
+        box-sizing border-box
+// 软件下载
+.index-software-download
+  background no-repeat center / cover
+  height pxs(575)
+  .index-icon
+    width pxs(888)
+    margin 0 auto
+    .index-list
+      position relative
+      width pxs(145)
+      .index-list-container
+        position absolute
+        top 0
+        left 0
+        right 0
+        bottom 0
+        margin auto
+        width pxs(145)
+        height pxs(189)
+        .index-icon-container
+          position relative
+          width pxs(144)
+          height @width
+          img
+            position absolute
+            bottom 0
+            left 50%
+            transform translate(-50%, 0)
+  .index-icon-bottom-container
+    margin-top pxs(60)
+    img
+      width pxs(415)
+.index-service-center
+  background-color #f2f2f2
+  padding pxs(60) 0
+  .index-service-center-container
+    &:first-of-type
+      margin-top pxs(70)
+      padding-bottom pxs(20)
+    &:nth-of-type(2n-1)
+      background-color #f2f2f2
+    &:nth-of-type(2n)
+      background-color #ffffff
+    .index-service-center-ul
+      width pxs(1100)
+      margin 0 auto
+      &.index-service-center-ul-height
+        height pxs(220)
+      .index-service-center-list
+        width 25%
+        line-height pxs(30)
+        span
+          margin-top pxs(10)
+          &:first-child
+            margin-top 0
+// 成功案例
+.index-success-case
+  padding pxs(60) 0 pxs(70)
+  border-top 1px solid #dddddd
+  background-color #f8f8f8
+  .index-list
+    width pxs(360)
+    img
+      max-width 100%
+    .index-success-case-info
+      padding pxs(37) pxs(10) pxs(30)
+      background-color #ffffff
+// 免费试用
+.index-free-trial
+  background #f8f8f8 no-repeat top center / cover
+  height pxs(302)
+  position relative
+  .index-free-bear
+    position absolute
+    left 0
+    bottom 0
+    font-size 0
+.index-swiper-case
+  height 590px
+  .swiper-container
+    width 100%
+    height 100%
+    .swiper-slide
+      position relative
+      .index-img-case
+        position absolute
+        top 0
+        left 0
+        bottom 0
+        right 0
+        margin auto
+        background center no-repeat / cover
+        img
+          max-width 100%
+      .index-swiper-case-info
+        position relative
+        z-index 9
+    .index-info
+      width pxs(400)
+.why
+  display block
+.swiper-pagination
+  position absolute
+  text-align center
+  transition 0.3s opacity
+  transform translate3d(0, 0, 0)
+  z-index 10
+  bottom 10px
+  left 0
+  width 100%
+  .swiper-pagination-switch
+    display inline-block
+    width 10px
+    height 10px
+    border-radius 50%
+    background #999
+    box-shadow 0px 1px 2px #555 inset
+    margin 0 3px
+    cursor pointer
+    &.swiper-active-switch
+      opacity 1
+      background #007aff
+.index
+  .index-width-80
+    width pxs(80)
+  .index-width-110
+    width pxs(110)
+  .index-width-686
+    width pxs(686)
+  .index-width-505
+    width pxs(505)
+  .index-width-550
+    width pxs(550)
+  .index-width-370
+    width pxs(370)
+  .index-width-300
+    width pxs(300)
+  .index-width-210
+    width pxs(210)
+  .index-width-184
+    width pxs(184)
+  .index-width-175
+    width pxs(175)
+  .index-width-143
+    width pxs(143)
+  .index-width-150
+    width pxs(150)
+  .index-width-1200
+    width pxs(1200)
+  .index-width-1289
+    width pxs(1289)
+  .index-height
+    height pxs(533)
+  .index-padding-left-15
+    padding-left pxs(15)
+  .index-padding-left-13
+    padding-left pxs(13)
+  .index-padding-bottom-15
+    padding-bottom pxs(15)
+  .index-padding-bottom-55
+    padding-bottom pxs(55)
+  .index-padding-bottom-75
+    padding-bottom pxs(75)
+  .index-padding-top-10
+    padding-top pxs(10)
+  .index-padding-top-35
+    padding-top pxs(35)
+  .index-padding-top-40
+    padding-top pxs(40)
+  .index-padding-top-23
+    padding-top pxs(23)
+  .index-padding-top-73
+    padding-top pxs(73)
+  .index-padding-top-57
+    padding-top pxs(57)
+  .index-padding-top-18
+    padding-top pxs(18)
+  .index-padding-0-20
+    padding 0 pxs(20)
+  .index-padding-17-0
+    padding pxs(17) 0
+  .index-margin-bottom-13
+    margin-bottom pxs(13)
+  .index-margin-bottom-33
+    margin-bottom pxs(33)
+  .index-margin-left-30
+    margin-left pxs(30)
+  .index-margin-left-49
+    margin-left pxs(49)
+  .index-margin-left-50
+    margin-left pxs(50)
+  .index-margin-left-60
+    margin-left pxs(60)
+  .index-margin-top-80
+    margin-top pxs(80)
+  .index-margin-top-50
+    margin-top pxs(50)
+  .index-margin-top-66
+    margin-top pxs(66)
+  .index-margin-top-44
+    margin-top pxs(44)
+  .index-margin-right-55
+    margin-right pxs(55)
+  .index-border
+    border 2px solid #5480d5
+    border-radius 7px
+    padding 5px 10px
+    box-shadow 0 0 10px 0 rgba(93, 137, 235, 1), 0 0 10px 0 rgba(93, 137, 235, 1) inset
+  .index-hover-code
+    font-size 0
+    .index-hover-code-show
+      position absolute
+      bottom 0
+      left 0
+      height 0
+      opacity 0
+      transition all 0.3s
+      overflow hidden
+      img
+        max-width 100%
+    &:hover
+      .index-hover-code-show
+        height 100%
+        opacity 1

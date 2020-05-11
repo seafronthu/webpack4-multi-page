@@ -1,19 +1,758 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Document</title>
+  <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+  <title>这是一一一 － 收银创业服务商｜全国领先的智能游艺设备物联网平台</title>
+  <meta http-equiv="X-UA-Compatible" content="ie=edge,chrome=1">
+  <meta name="keyword" content="这是一一一,这是一一一收银,创业服务,智能收银">
+  <meta name="description"
+    content="这是一一一是一家基于智能游艺设备的物联网平台服务提供商，旗下包括这是一一一智能套件、这是一一一收银、这是一一一、公司、上天系统等产品，这是一一一为广大商家提供一站式“微娱乐”解决方案，包括系统集成工具、运营赋能、数据赋能、商务赋能、供应链赋能，让商家运营更加简单便捷、降本增效，同时为消费者提供更优质的娱乐服务！">
+  <link href="https://cdn.bootcss.com/Swiper/2.7.6/idangerous.swiper.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css"
+    integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <script>
+    (function () {
+      if (!Function.prototype.bind) {
+        // eslint-disable-next-line no-extend-native
+        Function.prototype.bind = function (obj) {
+          var self = this;
+          var args = arguments;
+          return function () {
+            self.apply(obj, Array.prototype.slice.call(args, 1))
+          }
+        }
+      }
+    })();
+  </script>
 </head>
+
 <body>
-  <ul class="no-ul flex-row flex-between-center">
-    <li>这是菜单一</li>
-    <li>这是菜单二</li>
-    <li>这是菜单三</li>
-    <li>这是菜单四</li>
-  </ul>
-  <div class="ljb ggg">123</div>
-  <div class="demo2"></div>
+  <div class="min-width-pxs-1275 index">
+    <!-- header -->
+    <header class="header">
+      <nav class="nav flex-row flex-between-center margin-lr-auto max-width-pxs-1275">
+        <h5 class="margin-0 flex-row flex-center-stretch index-anchor-point-click cursor-select-none"
+          data-sign="software-download">
+          <div class="size-0 header-logo">
+            <img src="./img/morepage-merchant-logo.png">
+          </div>
+          <div class="index-padding-left-15 color-f flex-column flex-center-start">
+            <span class="size-18">这是一一一</span>
+            <span class="size-14">这个个个个个公司</span>
+          </div>
+        </h5>
+        <ul class="no-ul flex-row flex-center-stretch color-f">
+          <li class="index-anchor-point-click nav-menu" data-sign="index">首页</li>
+          <li class="index-anchor-point-click nav-menu" data-sign="entrepreneurship">就业问题</li>
+          <li class="index-anchor-point-click nav-menu" data-sign="success-case">成功案例</li>
+          <li class="index-anchor-point-click nav-menu" data-sign="index-service-center">服务中心</li>
+          <li class="index-anchor-point-click nav-menu" data-sign="software-download">软件下载</li>
+          <li class="index-anchor-point-click nav-menu" data-sign="contact-us">联系我们</li>
+        </ul>
+      </nav>
+    </header>
+    <!-- 主干 -->
+    <section>
+      <!-- banner -->
+      <div class="index-menu-block index-banner index-lazy-img" data-sign="index" data-src="./img/index-banner.png">
+        <div class="width-pxs-1090 margin-lr-auto relative height-hp">
+          <div class="flex-row flex-start-center index-padding-bottom-75">
+            <div class="text-left index-width-550">
+              <h5 class="size-40 color-f margin-0" style="margin-bottom: 15px;">这是一一一</h5>
+              <p class="margin-0 color-f size-40" style="margin-bottom: 40px;">这个个个个个公司</p>
+              <div class="index-width-370">
+                <p class="margin-0 size-24 color-f">单方事故的双方各得</p>
+              </div>
+            </div>
+          </div>
+          <div class="index-receive flex-row flex-start-center">
+            <div class="flex-row flex-start-center">
+              <!-- <div class="index-button-content text-center size-24 color-f">了解更多</div> -->
+              <dl class="flex-row flex-center-start index-form-new index-margin-left-50 index-input-button-container">
+                <dt class="index-input-button relative zindex-1">
+                  <div class="index-input-button">
+                    <div class="index-button-content text-center size-24 color-f input-button" id="contact-us-btn"
+                      data-form="3">联系我们</div>
+                  </div>
+                </dt>
+                <dd class="relative">
+                  <ul id="contact-us-form" style="display:none;"
+                    class="no-ul flex-row flex-start-center index-form-content">
+                    <li><span class="size-20 color-a text-nowrap">姓名：</span></li>
+                    <li class="index-input-list index-input-name bg-color-f flex-row flex-between-center">
+                      <input class="index-input-content flex-1 size-20 color-5d89eb form-input" data-name="姓名"
+                        data-type="name" data-form="3">
+                    </li>
+                    <li class="index-input-rod bg-color-9"></li>
+                    <li><span class="size-20 color-a text-nowrap">手机：</span></li>
+                    <li class="index-input-list index-input-phone bg-color-f">
+                      <input class="index-input-content flex-1 size-20 color-5d89eb form-input" type="tel"
+                        data-name="手机" data-type="mobile_phone" data-form="3" maxlength="11">
+                    </li>
+                  </ul>
+                </dd>
+              </dl>
+            </div>
+          </div>
+          <!-- <div class="index-contact flex-row flex-start-center">
+            <p class="margin-0 flex-row flex-between-center color-f size-20 index-width-505">
+              <span>创业热线：+8600000000</span>
+              <span>sercive@i3020.com</span>
+            </p>
+          </div> -->
+        </div>
+      </div>
+      <!-- 上天简介 -->
+      <div class="bg-color-9">
+        <div class="width-pxs-1275 margin-lr-auto">
+          <ul class="index-brief-intro no-ul flex-row flex-between-center">
+            <li class="index-list text-center flex-row flex-center">
+              <div>
+                <img src="./img/index-car.png">
+              </div>
+              <div class="inline-block text-left color-f index-margin-left-30">
+                <p class="size-14 index-margin-bottom-13">个人版</p>
+                <p class="size-14">涣发大号还让他</p>
+              </div>
+            </li>
+            <li class="index-list text-center flex-row flex-center">
+              <div>
+                <img src="./img/index-thumbs-up.png">
+              </div>
+              <div class="inline-block text-left color-f index-margin-left-30">
+                <p class="size-14 index-margin-bottom-13">惹我也认为他</p>
+                <p class="size-14">很过分的火锅店突然有人的</p>
+              </div>
+            </li>
+            <li class="index-list text-center flex-row flex-center">
+              <div>
+                <img src="./img/index-trend.png">
+              </div>
+              <div class="inline-block text-left color-f index-margin-left-30">
+                <p class="size-14 index-margin-bottom-13">和田玉人教育厅</p>
+                <p class="size-14">讽德诵功的方便v运热我以为而已</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!-- 上天介绍 -->
+      <div class="index-menu-block bg-color-f index-introduce" data-sign="2">
+        <div class="margin-lr-auto width-pxs-1090">
+          <div class="index-info flex-row flex-between-stretch">
+            <div class="index-right-content text-left">
+              <h5 class="color-30 size-36 weight-bold index-title">
+                <img src="./img/index-big-name.png" />
+              </h5>
+              <p class="margin-0 color-60 size-18 index-article">如果test如果还有突然回过头然后太热</p>
+              <p class="margin-0 color-60 size-18 index-article">个热水同入院后突然就要吐用基于</p>
+              <p class="margin-0 color-60 size-18 index-article">一头热菊花以天然居鱼塘局遇见你与他</p>
+            </div>
+            <div class="index-logo flex-column flex-between-center">
+              <div class="size-0">
+                <img class="index-width-184" src="./img/big-logo.png">
+              </div>
+              <span class="size-20 color-30" style="padding-bottom: 15px">上天 运营管理系统</span>
+            </div>
+          </div>
+          <ul class="no-ul flex-row flex-between-center index-column">
+            <li class="index-list flex-column flex-start-stretch">
+              <div class="index-list-container flex-1 flex-column flex-start-center">
+                <div class="index-introduce-icon index-shop"></div>
+                <p class="margin-0 size-18 color-5d89eb index-padding-top-35">核桃仁和他退役后</p>
+                <p class="margin-0 text-justify color-6 size-14 index-width-175 index-padding-top-23">
+                  今年又突然间又投入到今年伊藤洋华堂吧</p>
+              </div>
+            </li>
+            <li class="index-list flex-column flex-start-stretch">
+              <div class="index-list-container flex-1 flex-column flex-start-center">
+                <div class="index-introduce-icon index-light"></div>
+                <p class="margin-0 size-18 color-5d89eb index-padding-top-35">氧化过突然结婚犹太人的</p>
+                <p class="margin-0 text-justify color-6 size-14 index-padding-top-23 index-width-175">
+                  一天了余添和同仁堂还不如官方的好多个涣发大号官方的 </p>
+              </div>
+            </li>
+            <li class="index-list flex-column flex-start-stretch">
+              <div class="index-list-container flex-1 flex-column flex-start-center">
+                <div class="index-introduce-icon index-brand"></div>
+                <p class="margin-0 size-18 color-5d89eb index-padding-top-35">还要跟他任何认同待退回</p>
+                <p class="margin-0 text-justify color-6 size-14 index-padding-top-23 index-width-175">
+                  华润河南北国风光不合格房间内发动机的京东方今天一天热带鱼就</p>
+              </div>
+            </li>
+            <li class="index-list flex-column flex-start-stretch">
+              <div class="index-list-container flex-1 flex-column flex-start-center">
+                <div class="index-introduce-icon index-money"></div>
+                <p class="margin-0 size-18 color-5d89eb index-padding-top-35">和太热待会待会不规范的</p>
+                <p class="margin-0 text-justify color-6 size-14 index-padding-top-23 index-width-175">
+                  很过分的今年与他人御景华庭愚人节内推你还不够大繁荣和梵蒂冈还不能个梵蒂冈</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!-- 嗨皮服务 -->
+      <div class="index-entrepreneurship bg-color-f2 index-menu-block" data-sign="entrepreneurship">
+        <div class="index-entrepreneurship-banner index-lazy-img index-hover-code"
+          data-src="./img/index-sevice-banner.png">
+          <div class="width-pxs-1200 margin-lr-auto flex-row flex-start-center height-full">
+            <div class="flex-row flex-start-stretch">
+              <div class="cursor-select-none relative">
+                <img src="./img/morepage-merchant-logo.png">
+                <div class="index-hover-code-show">
+                  <img src="./img/morepage-merchant-code.png">
+                </div>
+              </div>
+              <div class="flex-column flex-between-start color-f text-center" style="margin-left:33px;">
+                <div class="size-46 index-border">特惠日</div>
+                <div class="size-22">"含苞待放人讲话一套的教育厅人家同一人"</div>
+                <div class="size-22">好规范巨化股份裤反馈</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="margin-lr-auto width-pxs-1200">
+          <div class="container-fluid">
+            <ul class="row no-ul index-entrepreneurship-ul">
+              <li class="index-entrepreneurship-list text-center col-sm-4">
+                <div class="index-entrepreneurship-list-content">
+                  <h5 class="color-0 size-20 margin-0 weight-400" style="text-shadow: 0 0 1px rgba(0, 0, 0, .6);">会废掉改好
+                  </h5>
+                  <p class="margin-0 color-4d size-18" style="margin-top:25px;text-shadow: 0 0 1px rgba(77,77,77,.3);">
+                    者只不过豆腐乳蝴蝶夫人很反感的几年今年</p>
+                  <p class="margin-0 color-4d size-18" style="margin-top:25px;text-shadow: 0 0 1px rgba(77,77,77,.3);">
+                    换个地方红地毯让</p>
+                  <div class="index-entrepreneurship-icon index-choice-address">
+                  </div>
+                </div>
+              </li>
+              <li class="index-entrepreneurship-list text-center col-sm-4">
+                <div class="index-entrepreneurship-list-content">
+                  <h5 class="color-0 size-20 margin-0 weight-400" style="text-shadow: 0 0 1px rgba(0, 0, 0, .6);">儿童还有人
+                  </h5>
+                  <p class="margin-0 color-4d size-18" style="margin-top:25px;text-shadow: 0 0 1px rgba(77,77,77,.3);">
+                    还不发的更好</p>
+                  <p class="margin-0 color-4d size-18" style="margin-top:25px;text-shadow: 0 0 1px rgba(77,77,77,.3);">
+                    和豆腐干会废掉</p>
+                  <div class="index-entrepreneurship-icon index-train">
+                  </div>
+                </div>
+              </li>
+              <li class="index-entrepreneurship-list text-center col-sm-4">
+                <div class="index-entrepreneurship-list-content">
+                  <h5 class="color-0 size-20 margin-0 weight-400" style="text-shadow: 0 0 1px rgba(0, 0, 0, .6);">他也
+                  </h5>
+                  <p class="margin-0 color-4d size-18" style="margin-top:25px;text-shadow: 0 0 1px rgba(77,77,77,.3);">
+                    而头一回 很过分的话</p>
+                  <p class="margin-0 color-4d size-18" style="margin-top:25px;text-shadow: 0 0 1px rgba(77,77,77,.3);">
+                    和那个当父级和</p>
+                  <div class="index-entrepreneurship-icon index-equipment-service">
+                  </div>
+                </div>
+              </li>
+              <li class="index-entrepreneurship-list text-center col-sm-4">
+                <div class="index-entrepreneurship-list-content">
+                  <h5 class="color-0 size-20 margin-0 weight-400" style="text-shadow: 0 0 1px rgba(0, 0, 0, .6);">教育厅人家
+                  </h5>
+                  <p class="margin-0 color-4d size-18" style="margin-top:25px;text-shadow: 0 0 1px rgba(77,77,77,.3);">
+                    特还有一套+很过分的话</p>
+                  <p class="margin-0 color-4d size-18" style="margin-top:25px;text-shadow: 0 0 1px rgba(77,77,77,.3);">
+                    句酷任天野</p>
+                  <div class="index-entrepreneurship-icon index-software-service">
+                  </div>
+                </div>
+              </li>
+              <li class="index-entrepreneurship-list text-center col-sm-4">
+                <div class="index-entrepreneurship-list-content">
+                  <h5 class="color-0 size-20 margin-0 weight-400" style="text-shadow: 0 0 1px rgba(0, 0, 0, .6);">狠毒女孩个
+                  </h5>
+                  <p class="margin-0 color-4d size-18" style="margin-top:25px;text-shadow: 0 0 1px rgba(77,77,77,.3);">
+                    过分的话那么好</p>
+                  <p class="margin-0 color-4d size-18" style="margin-top:25px;text-shadow: 0 0 1px rgba(77,77,77,.3);">
+                    换地方就用它+回调返回突然</p>
+                  <div class="index-entrepreneurship-icon index-gift">
+                  </div>
+                </div>
+              </li>
+              <li class="index-entrepreneurship-list text-center col-sm-4">
+                <div class="index-entrepreneurship-list-content">
+                  <h5 class="color-0 size-20 margin-0 weight-400" style="text-shadow: 0 0 1px rgba(0, 0, 0, .6);">教好规范的更好
+                  </h5>
+                  <p class="margin-0 color-4d size-18" style="margin-top:25px;text-shadow: 0 0 1px rgba(77,77,77,.3);">
+                    很过分的具有</p>
+                  <p class="margin-0 color-4d size-18" style="margin-top:25px;text-shadow: 0 0 1px rgba(77,77,77,.3);">
+                    红粉帝国</p>
+                  <div class="index-entrepreneurship-icon index-more-service">
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <p class="color-5d89eb size-18 margin-0 text-center" style="margin-top: 37px;"><span
+              class="cursor-select-none index-anchor-point-click" data-sign="index-service-center">进一步了解
+              ></span></p>
+        </div>
+      </div>
+      <!-- 其它疑问 -->
+      <div class="index-menu-block index-other-questions index-lazy-img" data-sign="other-questions"
+        data-src="./img/index-background-bear.png">
+        <div class="margin-lr-auto max-width-pxs-1200">
+          <h5 class="index-title margin-0 size-30 color-f text-center">教育厅如附件一try</h5>
+          <p class="index-describe margin-0 size-28 color-f text-center">下功夫恒邦股份党和国家</p>
+          <div class="flex-row flex-center index-margin-top-80">
+            <ul class="no-ul flex-row index-form flex-start-center">
+              <li class="index-input-list bg-color-f flex-row flex-between-center">
+                <span class="size-20 color-a">姓名：</span>
+                <input class="index-input-content flex-1 size-24 color-30 form-input" data-name="姓名" data-type="name"
+                  data-form="1">
+              </li>
+              <li class="index-input-list index-input-phone bg-color-f flex-row flex-between-center">
+                <span class="size-20 color-a">手机：</span>
+                <input class="index-input-content flex-1 size-20 color-30 form-input" data-name="手机"
+                  data-type="mobile_phone" data-form="1" maxlength="11">
+              </li>
+              <li class="index-input-button index-margin-left-60">
+                <div class="index-button-content text-center size-24 color-f input-button" data-form="1">免费试用</div>
+              </li>
+            </ul>
+          </div>
+          <p class="index-tip flex-row flex-center">
+            <span class="size-18 color-f" style="padding-right: 38px;">我们严格遵守用户保密条款，维护用户资料安全</span>
+            <span class="size-18 color-f">创业热线：1111111 &nbsp;&nbsp; 邮箱：1111@qq.com</span>
+          </p>
+        </div>
+      </div>
+      <!-- 上天+公司 -->
+      <div class="index-menu-block index-big-morepage" data-sign="big-morepage">
+        <h5 class="margin-0 text-center weight-400">
+          <div class="size-30 color-0">上天PC+这是一一一APP</div>
+          <div class="size-20 color-6" style="margin-top:25px;">上天+公司+这是一一一，让线下生意线上经营</div>
+        </h5>
+        <ul class="index-big-morepage-ul no-ul">
+          <li class="index-big-morepage-list bg-color-f">
+            <div class="flex-row flex-between-center">
+              <div class="flex-row flex-start-center index-big-morepage-content">
+                <div class="flex-column flex-center margin-right-25 width-pxs-120">
+                  <img src="./img/index-big.png" class="margin-bottom-25 index-width-80">
+                  <h5 class="weight-400 size-16 color-0 margin-0">上天系统</h5>
+                </div>
+                <p class="margin-0 color-6 size-14 text-justify flex-1">
+                  发士大夫撒地方达士大夫撒，
+                  支发生大幅度萨法
+                </p>
+              </div>
+              <div class="flex-row flex-start-center index-big-morepage-content">
+                <div class="flex-column flex-center margin-right-25 width-pxs-120">
+                  <img src="./img/index-morepage-c.png" class="margin-bottom-25 index-width-80">
+                  <h5 class="weight-400 size-16 color-0 margin-0 text-nowrap">公司</h5>
+                </div>
+                <div class="margin-0 color-6 size-14 text-justify flex-1">
+                  <p class="margin-0">范德萨的改法是放散阀</p>
+                  <p class="margin-0">grewgrew改为</p>
+                  <p class="margin-0">供热文化馆别惹我会惹祸</p>
+                  <p class="margin-0">34特如果特殊钢的舒服感的舒服感</p>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="index-big-morepage-list bg-color-f">
+            <div class="flex-row flex-between-center">
+              <div class="flex-row flex-start-center index-big-morepage-content">
+                <div class="flex-column flex-center margin-right-25 width-pxs-120">
+                  <img src="./img/index-connect.png" class="margin-bottom-25 index-width-80">
+                  <h5 class="weight-400 size-16 color-0 margin-0">连接一切</h5>
+                </div>
+                <p class="margin-0 color-6 size-14 text-justify flex-1">
+                  和任何人特它还给我而，
+                  他惹我GV反倒是第三
+                </p>
+              </div>
+              <div class="flex-row flex-start-center index-big-morepage-content">
+                <div class="flex-column flex-center margin-right-25 width-pxs-120">
+                  <img src="./img/index-morepage-b.png" class="margin-bottom-25 index-width-80">
+                  <h5 class="weight-400 size-16 color-0 margin-0 text-nowrap">这是一一一</h5>
+                </div>
+                <p class="margin-0 color-6 size-14 text-justify flex-1">
+                  和微软隔热个污染镉污染
+                  一扔范德萨发改掉好
+                </p>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <!-- 软件下载 -->
+      <div class="index-menu-block index-software-download flex-row flex-start-stretch index-lazy-img"
+        data-sign="software-download" data-src="./img/index-scan-banner.png">
+        <div class="width-pxs-1200 margin-lr-auto height-full">
+          <div class="index-icon height-full">
+            <ul class="no-ul flex-row flex-between-stretch height-full" style="margin-left: 450px;">
+              <li class="index-list height-full show-code-hover">
+                <div class="index-list-container cursor-select-none">
+                  <div class="size-0 index-icon-container">
+                    <img style="max-width: 88px" src="./img/morepage-merchant-logo.png">
+                  </div>
+                  <div class="size-0 index-icon-container" style="display: none;">
+                    <img class="index-width-150" src="./img/morepage-merchant-code.png">
+                  </div>
+                  <p class="margin-0 text-center color-f size-18 index-padding-top-18">嗨皮 商家版</p>
+                </div>
+              </li>
+              <li class="index-list height-full show-code-hover">
+                <div class="index-list-container cursor-select-none">
+                  <div class="size-0 index-icon-container">
+                    <img style="max-width: 88px" src="./img/morepage-app-logo.png">
+                  </div>
+                  <div class="size-0 index-icon-container" style="display: none;">
+                    <img class="index-width-150" src="./img/morepage-code.png">
+                  </div>
+                  <p class="margin-0 text-center color-f size-18 index-padding-top-18">这是一一一</p>
+                </div>
+              </li>
+              <li class="index-list height-full">
+                <div class="index-list-container cursor-select-none"
+                  onclick="window.location.href='https://yun.i3020.com/'">
+                  <div class="size-0 index-icon-container">
+                    <img style="max-width: 88px" src="./img/big-web-logo.png">
+                  </div>
+                  <p class="margin-0 text-center color-f size-18 index-padding-top-18">上天 PC</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- 服务中心 -->
+      <div class="index-menu-block index-service-center" data-sign="index-service-center">
+        <h5 class="margin-0 weight-400 text-center">
+          <div class="size-32 color-0">五大服务 我们的优势</div>
+        </h5>
+        <div class="index-service-center-container">
+          <ul class="no-ul flex-row index-service-center-ul size-24 color-0 text-center">
+            <li class="index-service-center-list"></li>
+            <li class="index-service-center-list">这是一一一品牌优势</li>
+            <li class="index-service-center-list">创业优势</li>
+            <li class="index-service-center-list">其他品牌</li>
+          </ul>
+        </div>
+        <div class="index-service-center-container">
+          <ul
+            class="no-ul flex-row flex-start-center index-service-center-ul index-service-center-ul-height size-30 color-0">
+            <li class="index-service-center-list flex-column flex-center">
+              <div class="color-0 size-20">软件服务</div>
+              <div class="color-0 size-20 weight-500">Software Service</div>
+            </li>
+            <li class="index-service-center-list color-6 size-14 flex-column flex-center">
+              <div>上天和我任何人</div>
+              <div>公司版</div>
+              <div>这是一一一用户端</div>
+            </li>
+            <li class="index-service-center-list color-6 size-14 flex-column flex-center">
+              <div>让他给娃儿跟我</div>
+              <div>个人各位</div>
+              <div>好的话</div>
+            </li>
+            <li class="index-service-center-list color-6 size-14 flex-column flex-center">
+              <div>火热是个好人探后弹</div>
+            </li>
+          </ul>
+        </div>
+        <div class="index-service-center-container">
+          <ul
+            class="no-ul flex-row flex-start-center index-service-center-ul index-service-center-ul-height size-30 color-0">
+            <li class="index-service-center-list flex-column flex-center">
+              <div class="color-0 size-20">贵人瑞</div>
+              <div class="color-0 size-20 weight-500">Preparatory Service</div>
+            </li>
+            <li class="index-service-center-list color-6 size-14 flex-column flex-center">
+              <div>二哥我不会</div>
+              <div>仍然</div>
+              <div>租赁+热火为蛇若何个</div>
+            </li>
+            <li class="index-service-center-list color-6 size-14 flex-column flex-center">
+              <div>和内容哥弄个瑞特</div>
+              <div>让哥哥</div>
+              <div>还不能突然格尔办法的</div>
+            </li>
+            <li class="index-service-center-list color-6 size-14 flex-column flex-center">
+              <div>如果要土卫二</div>
+              <div>胡歌的还能</div>
+            </li>
+          </ul>
+        </div>
+        <div class="index-service-center-container">
+          <ul
+            class="no-ul flex-row flex-start-center index-service-center-ul index-service-center-ul-height size-30 color-0">
+            <li class="index-service-center-list flex-column flex-center">
+              <div class="color-0 size-20">和太热</div>
+              <div class="color-0 size-20 weight-500">Intelligent Hardware</div>
+            </li>
+            <li class="index-service-center-list color-6 size-14 flex-column flex-center">
+              <div>分四五个</div>
+              <div>教育厅人家</div>
+              <div>try救济款同一人加热汤</div>
+              <div>即插即用</div>
+            </li>
+            <li class="index-service-center-list color-6 size-14 flex-column flex-center">
+              <div>可以提苦于就</div>
+              <div>看雨天反馈具体</div>
+              <div>人天涯热土个</div>
+              <div>明天更热的很高</div>
+              <div>门窗VG从</div>
+            </li>
+            <li class="index-service-center-list color-6 size-14 flex-column flex-center">
+              <div>你光放的吧是第三方给第三方</div>
+              <div>成本极高</div>
+              <div>与可聚影咖一裤头</div>
+              <div>是的反式脂肪是电饭锅三十多岁第三方</div>
+              <div>同行业热点同一伙人</div>
+              <div>巨化股份和加工费</div>
+            </li>
+          </ul>
+        </div>
+        <div class="index-service-center-container">
+          <ul
+            class="no-ul flex-row flex-start-center index-service-center-ul index-service-center-ul-height size-20 color-0">
+            <li class="index-service-center-list flex-column flex-center">
+              <div class="color-0 size-20">讲话一套的</div>
+              <div class="color-0 size-20 weight-500">Gift Service</div>
+            </li>
+            <li class="index-service-center-list color-6 size-14 flex-column flex-center">
+              <div>让他也让</div>
+              <div>那就好同一级</div>
+              <div>就要突然发邮件糊涂人</div>
+              <div>就突然间又突然</div>
+            </li>
+            <li class="index-service-center-list color-6 size-14 flex-column flex-center">
+              <div>要投入加热汤</div>
+              <div>有兼容统一</div>
+              <div>又突然间又让他让他有</div>
+              <div>示范给的舒服感</div>
+            </li>
+            <li class="index-service-center-list color-6 size-14 flex-column flex-center">
+              <div>梵蒂冈市政府国际化</div>
+              <div>是导出是的风格官方的</div>
+              <div>很过分的具体人员与肉体</div>
+              <div>回调返回更让他有</div>
+              <div>和风格独具慧眼秃头</div>
+            </li>
+          </ul>
+        </div>
+        <div class="index-service-center-container">
+          <ul
+            class="no-ul flex-row flex-start-center index-service-center-ul index-service-center-ul-height size-20 color-0">
+            <li class="index-service-center-list flex-column flex-center">
+              <div class="color-0 size-20">火锅店复合弓</div>
+              <div class="color-0 size-20 weight-500">Brand Service</div>
+            </li>
+            <li class="index-service-center-list color-6 size-14 flex-column flex-center">
+              <div>合议庭热度try</div>
+              <div>太阳河人动态引入</div>
+              <div>太阳花惹女工</div>
+              <div>就用它缝纫机油</div>
+            </li>
+            <li class="index-service-center-list color-6 size-14 flex-column flex-center">
+              <!-- <div>行业龙头神采飞扬品牌背书</div> -->
+              <div>硬话题人的家体育局</div>
+              <div>教育厅乳房具有天然级</div>
+              <div>快捷语图就可以退</div>
+            </li>
+            <li class="index-service-center-list color-6 size-14 flex-column flex-center">
+              <div>教育厅人家要投入</div>
+              <div>看就体育课呀</div>
+              <div>哭又投入科技园头</div>
+              <div>东方时尚滚动事件华</div>
+            </li>
+          </ul>
+        </div>
+        <!-- <div class="index-margin-top-50">
+          <p class="text-center color-0 size-16 margin-0 cursor-select-none"><span>点击了解 详细服务详情 >></span></p>
+        </div> -->
+      </div>
+      <!-- 成功案例 -->
+      <div class="index-menu-block index-success-case" data-sign="success-case">
+        <h5 class="weight-400 text-center margin-0">
+          <p class="size-32 color-0 margin-0">和同仁堂</p>
+          <!-- <p class="color-5480d5 size-18 margin-0 index-padding-top-10"><span>更多案例 ></span></p> -->
+        </h5>
+        <div class="margin-top-20">
+          <div class="width-pxs-1200 margin-lr-auto">
+            <ul class="no-ul flex-row flex-between-stretch">
+              <li class="index-list">
+                <div class="size-0">
+                  <img class="index-lazy-img" data-src="./img/index-place-case-02.png">
+                </div>
+                <div class="index-success-case-info text-center">
+                  <p class="margin-0 size-20 color-5480d5 index-padding-17-0">这是一一一-HR额头湾</p>
+                  <p class="margin-0 size-16 color-6">和电饭锅和豆腐干</p>
+                </div>
+              </li>
+              <li class="index-list">
+                <div class="size-0">
+                  <img class="index-lazy-img" data-src="./img/index-place-case-03.png">
+                </div>
+                <div class="index-success-case-info text-center">
+                  <p class="margin-0 size-20 color-5480d5 index-padding-17-0">这是一一一-份第三个人</p>
+                  <p class="margin-0 size-16 color-6">tyre天涯热土</p>
+                </div>
+              </li>
+              <li class="index-list">
+                <div class="size-0">
+                  <img class="index-lazy-img" data-src="./img/index-place-case-04.png">
+                </div>
+                <div class="index-success-case-info text-center">
+                  <p class="margin-0 size-20 color-5480d5 index-padding-17-0">这是一一一-特点与</p>
+                  <p class="margin-0 size-16 color-6">好规范会废掉量</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- <div class="text-center color-6 size-14 flex-column flex-center" style="margin-top: 70px;">
+            <div>神采飞扬+这是一一一 门店主要集中在经济发展迅速的长三角地区开设线下门店点位超过200家 在运营设备超过10000台</div>
+            <div class="index-padding-top-10">这是一一一创业项目在上天系统支持下遍及全国 一，二，三线城市</div>
+          </div> -->
+      </div>
+      <!-- 免费试用 -->
+      <div class="index-menu-block bg-color-e3 index-free-trial index-lazy-img flex-row flex-start-stretch"
+        data-sign="free-trial" data-src="./img/index-free-background.png">
+        <div class="margin-lr-auto width-pxs-1200 relative flex-column flex-center">
+          <div class="index-free-bear">
+            <img data-src="./img/index-free-bear.png" class="index-lazy-img">
+          </div>
+          <div class="relative zindex-1">
+            <h5 class="index-title margin-0 color-f size-24 text-center">获取14天-免费试用</h5>
+            <div class="flex-row flex-center" style="margin-top: 40px;">
+              <ul class="no-ul flex-row index-form flex-start-center">
+                <li class="index-input-list bg-color-f flex-row flex-between-center">
+                  <span class="size-20 color-a">姓名：</span>
+                  <input class="index-input-content flex-1 size-24 color-30 form-input" data-name="姓名" data-type="name"
+                    data-form="2">
+                </li>
+                <li class="index-input-list index-input-phone bg-color-f flex-row flex-between-center">
+                  <span class="size-20 color-a">手机：</span>
+                  <input class="index-input-content flex-1 size-24 color-30 form-input" data-name="手机"
+                    data-type="mobile_phone" data-form="2" maxlength="11">
+                </li>
+                <li class="index-input-button index-margin-left-60">
+                  <div class="index-button-content text-center size-24 color-f input-button" data-form="2">一头热统一</div>
+                </li>
+              </ul>
+            </div>
+            <p class="size-16 color-e9 margin-0 index-margin-top-44 text-center">
+              <span class="index-margin-right-55">我们严格遵守用户保密条款，维护用户资料安全</span>
+              <span>创业热线：1111111 &nbsp;&nbsp; 邮箱：1111@qq.com</span>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="index-menu-block index-swiper-case" data-sign="success-case">
+        <div class="swiper-container">
+          <div class="swiper-wrapper">
+            <!-- <div class="swiper-slide">
+                <div class="index-img-case">
+                  <img src="./img/swiper-case-1.png">
+                </div>
+                <div class="index-swiper-case-info width-pxs-1200 margin-lr-auto height-hp flex-row flex-start-center">
+                  <div class="index-info flex-column flex-start size-24 color-f">
+                    <span class="index-padding-bottom-15">- 周先生, 33岁，公司职员</span>
+                    <p class="margin-0 text-justify">
+                      “工薪阶层，每个月就拿点死工资。现在生活压力太大，也没有什么赚钱手段。了解了这是一一一之后，尝试性的在公司对面商业街租了几个边角，摆了5台。生意比我想得好。关键还是个很自由的兼职。不影响正常上班。生意无论大小，总是自己的好。”
+                    </p>
+                  </div>
+                </div>
+              </div> -->
+            <div class="swiper-slide">
+              <div class="index-img-case index-lazy-img" data-src="./img/swiper-case-2.png">
+                <!-- <img > -->
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="index-img-case index-lazy-img" data-src="./img/swiper-case-3.png">
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="index-img-case index-lazy-img" data-src="./img/swiper-case-4.png">
+              </div>
+            </div>
+          </div>
+
+          <!-- 如果需要导航按钮 -->
+          <!-- <div class="swiper-button-prev"></div>
+                  <div class="swiper-button-next"></div> -->
+
+          <!-- 如果需要滚动条 -->
+          <!-- <div class="swiper-scrollbar"></div> -->
+          <div class="swiper-pagination"></div>
+        </div>
+        <!-- 如果需要分页器 -->
+      </div>
+    </section>
+    <footer class="footer bg-color-f2">
+      <div class="flex-row flex-between-stretch padding-40-0 footer-container margin-lr-auto width-pxs-1200">
+        <div class="footer-container-left flex-1" style="align-self: stretch">
+          <img data-src="./img/index-machine.png" class="index-lazy-img">
+        </div>
+        <div class="footer-bar"></div>
+        <div class="flex-row flex-start-stretch size-16 color-6 footer-container-right">
+          <ul class="no-ul flex-column flex-between-start">
+            <li class="flex-column flex-center cursor-select-none index-anchor-point-click"
+              data-sign="software-download">
+              <div class="footer-icon size-0">
+                <img src="./img/morepage-merchant-logo.png">
+              </div>
+            </li>
+            <li class="cursor-select-none index-anchor-point-click" data-sign="index">首页</li>
+            <li class="cursor-select-none index-anchor-point-click" data-sign="entrepreneurship">就业问题</li>
+            <li class="cursor-select-none index-anchor-point-click" data-sign="success-case">成功案例</li>
+            <li class="cursor-select-none index-anchor-point-click" data-sign="index-service-center">服务中心</li>
+          </ul>
+          <ul class="no-ul flex-column flex-between-start" style="margin-left: 100px;">
+            <li class="flex-column flex-center cursor-select-none index-anchor-point-click"
+              data-sign="software-download">
+              <div class="footer-icon size-0">
+                <img src="./img/morepage-app-logo.png">
+              </div>
+            </li>
+            <li class="cursor-select-none index-anchor-point-click" data-sign="free-trial">14天项目试用</li>
+            <li class="cursor-select-none index-anchor-point-click" data-sign="index-service-center">项目优势</li>
+            <li class="cursor-select-none index-anchor-point-click" data-sign="software-download">软件下载</li>
+            <li class="cursor-select-none index-anchor-point-click" data-sign="big-morepage">上天+公司</li>
+          </ul>
+          <ul class="no-ul flex-column flex-between-start" style="margin-left: 58px;">
+            <li class="flex-column flex-center cursor-select-none index-anchor-point-click"
+              data-sign="software-download">
+              <div class="footer-icon size-0">
+                <img src="./img/big-web-logo.png">
+              </div>
+            </li>
+            <li class="cursor-select-none index-anchor-point-click" data-sign="other-questions">其它疑问</li>
+            <li class="cursor-select-none index-anchor-point-click" data-sign="contact-us">联系我们</li>
+            <li>　</li>
+            <li>　</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom index-menu-block width-pxs-1200 margin-lr-auto" data-sign="contact-us">
+        <div class="footer-bottom-content color-6 size-16 flex-row flex-between-start">
+          <div>
+            Copyright 2015-2019. All rights reserved
+            <a href="http://beian.miit.gov.cn" target="_blank">浙ICP备 111111号-2</a>
+          </div>
+          <div>创业热线：1111111 &nbsp;&nbsp; 邮箱：1111@qq.com</div>
+        </div>
+      </div>
+    </footer>
+  </div>
+  <script src="https://cdn.bootcss.com/jquery/1.10.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js"
+    integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous">
+  </script>
+  <script src="https://cdn.bootcss.com/Swiper/2.7.6/idangerous.swiper.js"></script>
+  <script src="https://cdn.bootcss.com/layer/2.3/layer.js"></script>
 </body>
+
 </html>

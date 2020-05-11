@@ -1,0 +1,31 @@
+
+.morepage-phone-down
+  width 100vw
+  height 100vh
+  &.morepage-b-background
+    background url('../../assets/img/morepage-b-background.png') center no-repeat /cover
+  &.morepage-c-background
+    background url('../../assets/img/morepage-c-background.png') center no-repeat /cover
+  .morepage-phone-down-container
+    padding rems(263) rems(109) 0
+    img
+      max-width 100%
+    .morepage-phone-down-button-ios
+      display none
+      margin-top rems(102)
+    .morepage-phone-down-button-android
+      display none
+      margin-top rems(70)
+  .morepage-phone-down-mask
+    position fixed
+    top 0
+    left 0
+    width 100vw
+    height 100vh
+    box-sizing border-box
+    padding 0 rems(20)
+    background-color rgba(0, 0, 0, 0.6)
+    z-index 9
+    display none
+    img
+      max-width 100%
